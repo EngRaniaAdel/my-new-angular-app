@@ -1,0 +1,5 @@
+<p>My Course is {{course.name}}</p>
+<p>Birthday is {{ birthday | date:'dd/MMM/yyyy'  | uppercase }}</p>
+<div  *ngIf="course.name==='Angular Course'">Hello Angular Course</div>
+<div  *ngIf="course.id===3">Im the HTML Course</div>
+<button (click)="OnCourseViewed()">View Course</button>
